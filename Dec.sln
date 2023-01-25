@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dec", "Dec\Dec.vcxproj", "{FD2317D0-7008-4160-B488-5955F08E121E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Faker", "Faker\Faker.vcxproj", "{86216737-B906-4A65-8594-26EBC2C44EEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD2317D0-7008-4160-B488-5955F08E121E}.Debug|x64.ActiveCfg = Debug|x64
+		{FD2317D0-7008-4160-B488-5955F08E121E}.Debug|x64.Build.0 = Debug|x64
+		{FD2317D0-7008-4160-B488-5955F08E121E}.Release|x64.ActiveCfg = Release|x64
+		{FD2317D0-7008-4160-B488-5955F08E121E}.Release|x64.Build.0 = Release|x64
+		{86216737-B906-4A65-8594-26EBC2C44EEE}.Debug|x64.ActiveCfg = Debug|x64
+		{86216737-B906-4A65-8594-26EBC2C44EEE}.Debug|x64.Build.0 = Debug|x64
+		{86216737-B906-4A65-8594-26EBC2C44EEE}.Release|x64.ActiveCfg = Release|x64
+		{86216737-B906-4A65-8594-26EBC2C44EEE}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E71E0F75-BFBB-4941-9CF7-990384BFD6BD}
+	EndGlobalSection
+EndGlobal
