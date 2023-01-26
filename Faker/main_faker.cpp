@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 
     QTcpSocket client;
     client.connectToHost(QHostAddress::LocalHost, setting->port());
-    bool ok = client.waitForConnected(5000);
+    bool ok = client.waitForConnected(3000);
     if (!ok)
     {
         qDebug() << "No server found.";

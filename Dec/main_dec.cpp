@@ -42,6 +42,9 @@ char block[kBlockSize];
 
 static void doDecTask(QTcpSocket* client, const QString& file)
 {
+    QFileInfo fi(file);
+    qDebug() << "Decrypting " << QDir::toNativeSeparators(fi.absoluteFilePath()) << "...";
+
     qint32 fileNameSize = (qint32)file.size();
     client->write((const char*)&fileNameSize, sizeof(fileNameSize));
     qDebug() << "write fileNameSize:" << fileNameSize;
@@ -148,20 +151,16 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-    if (taskFiles.isEmpty())
-    {
-        qDebug() << "No file will be decrypted.";
-        return 0;
-    }
-
     for (const QString& file : taskFiles)
         doDecTask(client, file);
+
+    qDebug() << taskFiles.size() << "file(s) decrypted.";
 
     qint32 byeCmd = -1;
     client->write((const char*)&byeCmd, sizeof(byeCmd));
     client->waitForBytesWritten();
     client->close();
-    qDebug() << "Tasks done, bye command sent.";
+    //qDebug() << "Tasks done, bye command sent.";
 
     server.close();
 
