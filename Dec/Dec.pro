@@ -1,13 +1,13 @@
 TEMPLATE = app
 TARGET = Dec
-DESTDIR = ../build
+DESTDIR = $${PWD}/../build
 INCLUDEPATH += ../Common
 
 QT += core network
 
-HEADERS += ../Common.h \
-    ../Setting.h
+HEADERS += ../Common/Common.h \
+    ../Common/Setting.h
 
 SOURCES += ./main_dec.cpp \
-    ../Common.cpp \
-    ../Setting.cpp
+    ../Common/Common.cpp \
+    ../Common/Setting.cpp
