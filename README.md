@@ -3,5 +3,10 @@
 
 使用方式：
 
+Windows
 - 解密：dec.exe <文件或目录>
 - 查看是否加密：dec.exe <文件或目录> -view
+
+Linux
+- 解密：dec_linux <文件或目录>
+- 
