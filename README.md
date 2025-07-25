@@ -9,4 +9,3 @@ Windows
 
 Linux
 - 解密：dec_linux <文件或目录>
-- 
