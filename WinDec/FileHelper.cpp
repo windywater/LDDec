@@ -15,7 +15,7 @@
 
 	fs.open(fileName.c_str(), std::ios_base::in | std::ifstream::binary);
 	fs.seekg(0, std::fstream::end);
-	__int64 length = (int)fs.tellg();
+	__int64 length = (__int64)fs.tellg();
 	if (length < 0)
 		return content;
 
